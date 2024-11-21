@@ -4,6 +4,8 @@ with open('example.txt', 'r') as f:
 
     FID = []
     mem_strength = []
+    benign_count = 0
+    malicious_count = 0
 
     for line in f:
         if 'FID' in line:
@@ -27,3 +29,8 @@ with open('example.txt', 'r') as f:
                         mem_strength.append(float(number))
                         break
                 
+        if 'benign model' in line:
+            benign_count += 1
+
+        if 'malicious model' in line:
+            malicious_count += 1
