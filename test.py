@@ -34,3 +34,9 @@ with open('example.txt', 'r') as f:
 
         if 'malicious model' in line:
             malicious_count += 1
+
+    print('Number of benign models: ', benign_count)
+    print('Number of malicious models: ',malicious_count)
+
+    
+
