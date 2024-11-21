@@ -38,5 +38,6 @@ with open('example.txt', 'r') as f:
     print('Number of benign models: ', benign_count)
     print('Number of malicious models: ',malicious_count)
 
-    
+    print('FID mean: ', statistics.mean(FID))
+    print('Memory Strength mean: ', statistics.mean(mem_strength))
 
